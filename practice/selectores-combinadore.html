@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../style.css" rel="stylesheet" type="text/css" />
+    <title>Selectores Combinadores</title>
+    <style>
+      /*Combinadore decendiente*/
+      div p {
+        background: #ad88c6;
+      }
+      /*Combinadore hijo directo*/
+      div > div > p {
+        background: cyan;
+      }
+      /*Combinador Adyacente*/
+      p + section{
+        background: brown;
+      }
+      section ~ p {
+        background: salmon;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1 class="title">Selectores Combinadores</h1>
+      <section class="grid">
+        <a class="card">
+          <h2 class="title">Combinador Decendiente</h2>
+          <p>
+            El combinador (espacio) selecciona los elementos que <br />
+            son descendientes del primer elemento
+          </p>
+          <div>
+            <p>Combinador Decendiente</p>
+          </div>
+        </a>
+
+        <a class="card">
+          <h2 class="title">Combinador hijo directo</h2>
+          <p>
+            El combinador (>) selecciona los elementos que <br />
+            son descendientes directo inmediato del primer elemento.
+          </p>
+          <div>
+            <div>
+              <p>Combinador Hijo Directo</p>
+            </div>
+            <p>Combinador Decendiente</p>
+          </div>
+        </a>
+
+        <a class="card">
+          <h2 class="tittle">Combinador Adyacente</h2>
+          <p>
+            El combinador ~ selecciona hermanos. Esto quiere <br />
+            decir que el segundo elemento sigue al primero <br />
+            (no necesariamente de forma inmediata) y ambos comparten <br />
+            el mismo elemento padre
+          </p>
+          <section>
+            <p>Combinador Adyacente</p>
+            <p>Combinador Adyacente</p>
+          </section>
+        </a>
+        
+        <a class="card">
+          <h2 class="tittle">
+            <p>Combinador de Hermanos</p>
+          </h2>
+
+          <p>
+            El combinador + selecciona hermanos adyacentes. Esto quiere <br> 
+            decir que el segundo elemento sigue directamente al primero <br>
+            y ambos comparten el mismo elemento padre.
+          </p>
+          <section>
+            <p>Combinador Adyacente</p>
+            <p>Combinador Adyacente</p>
+          </section>
+          <p>Combinador hermanos</p>
+          <p>Combinador hermanos</p>
+        </a>
+      </section> 
+      <a class="card" href="../index.html"> <h2>principal</h2> </a>
+    </main>
+  </body>
+</html>

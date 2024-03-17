@@ -10,3 +10,16 @@ channel = "stable-22_11"
 deploymentTarget = "static"
 build = ["npm", "run", "build"]
 publicDir = "dist"
+
+[rules]
+
+[rules.formatter]
+
+[rules.formatter.fileExtensions]
+
+[rules.formatter.fileExtensions.".html"]
+id = "module:nodejs-18:v31-20240213-3f08513/formatter:prettier"
+
+[[ports]]
+localPort = 5173
+externalPort = 80

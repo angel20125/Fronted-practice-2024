@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../style.css" rel="stylesheet" type="text/css" />
+    <title>Display elmentos html</title>
+    <style>
+      .-block{
+        height: 100px;
+        width: 100%;
+        margin: 0px;
+        border: 2px solid black;
+        background-color: #e178c5;
+      }
+      .-inline{
+        background-color: darkcyan;
+        border: 2px solid black;
+        border-radius:50px;
+      }
+      .-in-line-block{
+        height: 50px;
+        width: 100%;
+        margin: 0px;
+        border-radius:50px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1 class="title">Tipo de display</h1>
+      <section class="grid">
+        <a class="card">
+          <h2 class="title">Elementos html display:block &rarr;</h2>
+          <p>Un div es un elemento que posee display block</p>
+          <p>
+            El display `block` establece que un elemento ocupará todo el espacio
+            disponible por defecto y el siguiente elemento a este se situará por
+            debajo. Es posible **añadir medidas** de anchura `width` y
+            altura `height` a estos a elementos.
+          </p>
+          <div class="-block">bloque</div>
+        </a>
+
+        <a class="card">
+          <h2 class="title">Elementos html con display:inline &rarr;</h2>
+          <p>
+            El display inline establece que un elemento ocupará el espacio del
+            contenido del mismo y el siguiente elemento se situará a la derecha.
+            No es posible añadir medidas** de anchura width y altura height a
+            estos a elementos. También, no es posible agregar todas las
+            propiedades del modelo de caja, únicamente funcionará la
+            propiedad margin en el eje horizontal
+          </p>
+          <q class="-inline">inline></q>
+        </a>
+
+        <a class="card">
+          <h2 class="title">Elementos html con display:inline-block &rarr;</h2>
+          <p>
+            El display inline-block combina las ventajas de bloque de colocar
+            medidas al elemento y propiedades del modelo de caja correctamente;
+            con las ventajas de inline de color un elemento seguido de otro en
+            el mismo espacio.
+          </p>
+          <button class="-in-line-block">inline-block</button>
+        </a>
+      </section>
+      <a class="card" href="../index.html"> <h2>atras</h2> </a>
+    </main>
+  </body>
+</html>

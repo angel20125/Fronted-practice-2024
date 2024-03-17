@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../style.css" rel="stylesheet" type="text/css" />
+    <title>Selectores</title>
+    <style>
+      /*selectores de tipo*/
+      div {
+        background: #ad88c6;
+      }
+      /*selectores de clase*/
+      .caja {
+        background: #ffe6e6;
+      }
+      /*selectores-id*/
+      #text-id {
+        color: #40679e;
+      }
+
+      a[href="https://colorhunt.co/"]
+      {
+        background: #fba834;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1 class="title">Selectores</h1>
+
+      <section class="grid">
+        <a class="card">
+          <h2 class="title">Selectores de tipo</h2>
+          <p>
+            Los selectores de tipo aplican a todos los elementos que tengan el
+            mismo nombre de etiqueta.
+          </p>
+          <div>div1</div>
+          <div>div2</div>
+        </a>
+
+        <a class="card">
+          <h2 class="title">Selectores de Clase</h2>
+          <p>
+            Da a un conjunto de etiquetas html los estilos definido en nuestro
+            clase de css.
+          </p>
+          <div class="caja" id="text-id">div1</div>
+          <div class="caja" id="tex-id">div2</div>
+        </a>
+
+        <a class="card">
+          <h2 class="title">Selectores id</h2>
+          <p>
+            Da a un elemento html los estilos definido en nuestro en nuestro
+            selector id, es importante decir que este tipo de selector solo se
+            puede usar una vez.
+          </p>
+          <div class="caja" id="text-id">div1</div>
+          <div class="caja">div2</div>
+        </a>
+
+        <a class="card">
+          <h2 class="title">Selectores universal</h2>
+          <p>
+            Da a un elemento html los estilos definido en nuestro en nuestro
+            selector id, es importante decir que este tipo de selector solo se
+            puede usar una vez.
+          </p>
+          <div class="caja" id="text-id">div1</div>
+          <div class="caja">div2</div>
+        </a>
+      </section>
+      <a class="card" href="../index.html"> <h2>atras</h2> </a>
+    </main>
+  </body>
+</html>
