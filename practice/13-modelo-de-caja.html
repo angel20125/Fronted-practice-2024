@@ -1,51 +1,61 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style.css" type="text/css" />
-    <title>Modelo de caja</title>
-    <style>
-      .container-caja {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        border: 1px solid #eaeaea;
-        text-decoration: none;
-        border-radius: 10px;
-        background-color: papayawhip;
-        width: 400px;
-        height: 400px;
-        text-align: center;
-      }
 
-      .item-caja {
-        text-decoration: none;
-        border-radius: 10px;
-        border: 1px solid #eaeaea;
-        margin: 30px;
-        padding: 20px;
-        background-color: lightcoral;
- 
-        height: 120px;
-        width: 120px;
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <h1 class="title">Modelo de caja</h1>
-      <section class="grid">
-        <div class="container-caja">
-          <p class="item-caja">item</p>
-          <p class="item-caja">item</p>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../style.css" type="text/css" />
+  <title>Modelo de caja</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    }
+    .container-caja {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border: 5px solid #eaeaea;
+      text-decoration: none;
+      border-radius: 10px;
+      background-color: papayawhip;
+      width: 500px;
+      height: 500px;
+      gap: 10px;
+    }
+
+    .item-caja {
+      text-decoration: none;
+      border-radius: 10px;
+      background-color: lightcoral;
+      border: 0.5rem solid black;
+      margin: 20px;
+      padding: 10px;
+      height: 200px;
+      width: 200px;
+      /*fuerza a manterner las dimenciones en 200px*/
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1 class="title">Modelo de caja</h1>
+    <section class="grid">
+      <section class="container-caja">
+        <div class="item-caja"></div>
+        <div class="item-caja"></div>
       </section>
-      <a class="card" href="../index.html">
-        <h2 class="title">atras</h2>
-      </a>
-    </main>
-  </body>
+    </section>
+    <a class="card" href="../index.html">
+      <h2 class="title">atras</h2>
+    </a>
+  </main>
+</body>
+
 </html>
