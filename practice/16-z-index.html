@@ -9,7 +9,6 @@
 </head>
 <style>
   .container {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -38,7 +37,13 @@
     border-radius: 10px;
   }
 
+  .container-display {
+    position: absolute;
+  }
+
   .uno {
+    position: relative;
+    top: 0;
     height: 150px;
     width: 150px;
     border-radius: 10px;
@@ -46,6 +51,7 @@
   }
 
   .dos {
+
     height: 150px;
     width: 150px;
     border-radius: 10px;
@@ -59,12 +65,6 @@
     background: #ACE2E1;
   }
 
-  .tres {
-    height: 150px;
-    width: 150px;
-    border-radius: 10px;
-    background: #F7EEDD;
-  }
 </style>
 
 <body>
@@ -74,10 +74,23 @@
         <h2 class="card " class="title">Apilamiento z-index</h2>
         La z-indexpropiedad especifica el orden de pila de un elemento.
 
-        Un elemento con un orden de pila mayor siempre está delante de un elemento con un orden de pila menor.
+        ## Qué es la propiedad z-index
 
-        Nota: z-index solo funciona en elementos posicionados (posición: absoluta, posición: relativa, posición: fija o
-        posición: pegajosa) y elementos flexibles (elementos que son hijos directos de elementos display:flex ).
+        **El contexto de apilamiento se configura con la propiedad `z-index`.**
+
+        Por defecto, todos los elementos tienen un valor `auto`, es decir, el orden está definido por la estructura del
+        HTML.
+        Los primeros elementos estarán detrás y los últimos estarán de frente.
+
+        Si se establece un valor positivo, este elemento se sitúa por delante de los demás. Si se establece un valor
+        negativo,
+        se sitúa por detrás.
+
+        Si un elemento tiene un `z-index` mayor a otro, estará por delante. Sin embargo, **si un elemento que tiene
+        un `z-index` menor a otros, sus hijos nunca estarán por encima, aunque su `z-index` sea mayor**.
+
+        Nota: z-index solo funciona en elementos posicionados (position:absolute, position: relative, position:fixed
+        position:sticky) y elementos flexibles (elementos que son hijos directos de elementos display:flex ).
 
         Nota: Si dos elementos posicionados se superponen sin especificarlo z-index , el elemento colocado en último
         lugar en el
@@ -85,14 +98,18 @@
       </article>
     </section>
 
-    <section class="container">
-      <div class="uno"></div>
-      <div class="dos"></div>
-      <div class="tres">
-        <div class="cuatro"></div>
-      </div>
-    </section>
+
   </main>
+  <div class="container-display">
+    
+    <div class="uno">hola</div>
+    <div class="dos">nuevo</div>
+    <div class="tres">
+      <div class="cuatro">adios</div>
+    </div>
+
+  </div>
+
 
 </body>
 
