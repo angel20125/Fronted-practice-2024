@@ -37,40 +37,68 @@
     border-radius: 10px;
   }
 
-  .container-display {
-    position: absolute;
+  .container-ejemplo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background: #ACE2E1;
   }
 
   .uno {
-    position: relative;
-    top: 0;
+    position: absolute;
     height: 150px;
-    width: 150px;
+    width: 250px;
     border-radius: 10px;
     background: #008DDA;
   }
 
   .dos {
-
+    position: absolute;
     height: 150px;
-    width: 150px;
+    width: 200px;
     border-radius: 10px;
     background: #41C9E2;
   }
 
   .tres {
+    position: absolute;
     height: 150px;
     width: 150px;
     border-radius: 10px;
-    background: #ACE2E1;
+    background: plum;
   }
 
+  .cuatro {
+    position: absolute;
+    height: 150px;
+    width: 250px;
+    border-radius: 10px;
+    background: #008DDA;
+  }
+
+  .cinco {
+    position: absolute;
+    height: 150px;
+    width: 200px;
+    border-radius: 10px;
+    background: #41C9E2;
+  }
+
+  .seis {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    background: plum;
+  }
 </style>
 
 <body>
   <main>
     <section class="container">
       <article>
+        <h1 class="title"></h1>
         <h2 class="card " class="title">Apilamiento z-index</h2>
         La z-indexpropiedad especifica el orden de pila de un elemento.
 
@@ -91,24 +119,23 @@
 
         Nota: z-index solo funciona en elementos posicionados (position:absolute, position: relative, position:fixed
         position:sticky) y elementos flexibles (elementos que son hijos directos de elementos display:flex ).
-
+        <br>
         Nota: Si dos elementos posicionados se superponen sin especificarlo z-index , el elemento colocado en último
         lugar en el
         código HTML se mostrará en la parte superior.
       </article>
     </section>
 
+    <section >
+      <div class="uno">UNO</div>
+      <div class="dos">DOS</div>
+      <div class="tres">TRES</div>
+    </section>
+
 
   </main>
-  <div class="container-display">
-    
-    <div class="uno">hola</div>
-    <div class="dos">nuevo</div>
-    <div class="tres">
-      <div class="cuatro">adios</div>
-    </div>
 
-  </div>
+
 
 
 </body>
