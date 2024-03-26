@@ -1,36 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pseudo-clases y pseudo-elementos</title>
-   <link href="../style.css" rel="stylesheet" type="text/css" />
+  <link href="../style.css" rel="stylesheet" type="text/css" />
   <style>
     p {
-      color:blue
+      color: blue
     }
+
     /*pseudo clases*/
     p:hover {
-      color:aquamarine;
-      background-color:#E178C5;
+      color: aquamarine;
+      background-color: #E178C5;
     }
-    
+
     /*pseudo elementos*/
-    p::first-letter{
-      color:teal
+    p::first-letter {
+      color: teal;
       text-transform: capitalize;
     }
-    p::before{
+
+    p::before {
       content: "♥";
-      color:red;
+      color: red;
     }
-    p::after{
-      content:"💕"
-      color:green;
+
+    p::after {
+      content: "💕";
+      color: green;
     }
   </style>
 </head>
+
 <body>
   <main>
     <h1 class="title">
@@ -38,16 +43,19 @@
     </h1>
     <section class="grid">
 
-      
+
       <a class="card">
         <p>perro🐶</p>
         <p>gato😺</p>
         <p>sapo🐸</p>
       </a>
-      <br/>
- 
+      <br />
+
     </section>
-     <a class="card" href="../index.html"> <h2>atras</h2> </a>
+    <a class="card" href="../index.html">
+      <h2>atras</h2>
+    </a>
   </main>
 </body>
+
 </html>
