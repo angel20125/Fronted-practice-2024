@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Medias Queries</title>
   <style>
     a {
@@ -13,51 +12,44 @@
     }
 
     body {
+      display: grid;
       font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
         Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
       margin: 0px;
       padding: 0px;
       display: grid;
-
-    }
-
-    .wrapper-main {
-
-      display: grid;
+      color: azure;
       grid-template-areas:
         "header header header"
         "aside main main"
         "footer footer footer";
+      grid-template-columns: auto auto auto;
+      grid-template-rows: auto 100vh auto;
 
     }
 
-    header {
-      height: 100px;
+    .o-header {
+      grid-area: header;
       background-color: #3F1D38;
-
+      height: 100px;
     }
 
-    main {
-      height: 100px;
-      background-color: #A2678A;
-
-    }
-
-    aside {
-      height: 100px;
+    .o-aside {
+      grid-area: aside;
       background-color: #4D3C77;
 
     }
 
-    article {
-      height: 100px;
-      background-color: #3F1D38;
+    .o-main {
+      grid-area: main;
+      background-color: #A2678A;
 
     }
 
-    footer {
+    .o-footer {
+      grid-area: footer;
       height: 100px;
-      background-color: #E19898;
+      background-color: #E19898
     }
   </style>
 </head>
@@ -65,12 +57,11 @@
 <body>
 
   <body>
-    <div class="wrapper-main">
-      <header></header>
-      <main></main>
-      <aside></aside>
-      <footer></footer>
-    </div>
+    <header class="o-header">Header</header>
+    <aside class="o-aside">Aside</aside>
+    <main class="o-main">Main</main>
+    <footer class="o-footer">Footer</footer>
+
     <a class="card" href="../index.html">
       <h2>atras</h2>
     </a>
